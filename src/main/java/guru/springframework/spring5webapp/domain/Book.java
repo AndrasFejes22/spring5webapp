@@ -2,9 +2,9 @@ package guru.springframework.spring5webapp.domain;
 
 
 
-import javax.persistence.*;
+//import javax.persistence.*;
 
-import javax.persistence.Entity;
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -14,6 +14,7 @@ public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
     private String title;
     private String isbn;
 
