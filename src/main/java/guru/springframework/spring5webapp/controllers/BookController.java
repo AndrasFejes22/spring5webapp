@@ -14,12 +14,9 @@ public class BookController {
         this.bookRepository = bookRepository;
     }
 
-    //nyilvan ezt nem ertem:
-
-    //@RequestMapping("/list") //  ezt egy másik videoban lattam
     @RequestMapping("/books") // ez az udemy-s
     public String getBooks(Model model){
         model.addAttribute("books",bookRepository.findAll());
-        return "books/list"; // ide nem tudom mit kell írni, ez az eredeti udemys
+        return "list"; // --> in the templates file
     }
 }
