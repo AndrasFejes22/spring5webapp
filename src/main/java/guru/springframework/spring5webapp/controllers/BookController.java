@@ -16,10 +16,10 @@ public class BookController {
 
     //nyilvan ezt nem ertem:
 
-    //@RequestMapping("/books") // ez az udemy-s
-    @RequestMapping("/books") // ezt egy másik videoban lattam
+    //@RequestMapping("/list") //  ezt egy másik videoban lattam
+    @RequestMapping("/books") // ez az udemy-s
     public String getBooks(Model model){
         model.addAttribute("books",bookRepository.findAll());
-        return "books/list"; // ide nem tudom mit kell írni, ez az eredeti
+        return "books/list"; // ide nem tudom mit kell írni, ez az eredeti udemys
     }
 }
