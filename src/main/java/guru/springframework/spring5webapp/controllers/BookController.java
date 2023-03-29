@@ -16,7 +16,7 @@ public class BookController {
 
     @RequestMapping("/books") // ez az udemy-s
     public String getBooks(Model model){
-        model.addAttribute("books",bookRepository.findAll());
+        model.addAttribute("books",bookRepository.findAll()); // http://localhost:8080/books
         return "list"; // --> in the templates file
     }
 }
